@@ -1,0 +1,22 @@
+h1 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 2;
+	letter-spacing: 0;
+	text-indent: 16px;
+}
+
+h3 {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 2;
+	letter-spacing: 0.15px;
+	text-indent: 16px;
+}

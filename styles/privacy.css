@@ -1,0 +1,16 @@
+.sized-box {
+	height: 20vh;
+}
+
+header {
+	background: var(--white);
+	border-radius: 24px 24px 0 0;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+main {
+	padding: 48px 16px;
+	gap: 48px;
+}

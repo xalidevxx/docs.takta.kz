@@ -1,0 +1,52 @@
+header {
+	height: 64px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+	flex: 1;
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--white);
+}
+
+label {
+	min-width: 107px;
+	height: 40px;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+span {
+	display: block;
+	line-height: 2;
+	font-size: 16px;
+}
+
+.icon-button {
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.button {
+	height: 48px;
+	padding: 0 16px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border-radius: 24px;
+}

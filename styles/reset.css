@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	color: var(--dark);
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	width: 100%;
+	max-width: var(--container);
+	margin: 0 auto;
+	padding: 0;
+	background-color: #99d3ff;
+	background-image: radial-gradient(
+			at 83% 88%,
+			hsla(245, 97%, 72%, 1) 0px,
+			transparent 50%
+		),
+		radial-gradient(at 26% 58%, hsla(306, 78%, 74%, 1) 0px, transparent 50%),
+		radial-gradient(at 29% 46%, hsla(155, 77%, 61%, 1) 0px, transparent 50%),
+		radial-gradient(at 2% 76%, hsla(273, 82%, 78%, 1) 0px, transparent 50%),
+		radial-gradient(at 93% 12%, hsla(344, 75%, 79%, 1) 0px, transparent 50%),
+		radial-gradient(at 92% 18%, hsla(229, 71%, 77%, 1) 0px, transparent 50%),
+		radial-gradient(at 10% 55%, hsla(242, 81%, 60%, 1) 0px, transparent 50%);
+	position: relative;
+	overflow-y: overlay;
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+	width: 0px;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+a:hover,
+button:hover {
+	background-color: var(--light);
+}
+
+ul,
+ol {
+	list-style-position: inside;
+}
+
+ol {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+	list-style-type: none;
+	counter-reset: section;
+}
+
+ol > li,
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+ol > li {
+	counter-increment: section;
+}
+
+ol li h2::before {
+	content: counter(section) '. ';
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	counter-increment: none;
+}
+
+ul li::before {
+	content: '- ';
+}
