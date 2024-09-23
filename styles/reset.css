@@ -80,6 +80,14 @@ ol li h2::before {
 	content: counter(section) '. ';
 }
 
+ol ol > li {
+	display: inline-block !important;
+}
+
+ol ol > li:before {
+	content: counters(section, '.');
+}
+
 ul {
 	list-style-type: none;
 }
